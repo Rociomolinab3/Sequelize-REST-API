@@ -7,24 +7,32 @@
 <body>
   <div id="root">
     <h1>Bienvenido a la Página de Inicio</h1>
-    <div>
-      <label>
-        Nombre:
-        <input type="text" id="nombreInput" />
-      </label>
-      <br />
-      <label>
-        Email:
-        <input type="email" id="emailInput" />
-      </label>
-      <br />
-      <label>
-        Teléfono:
-        <input type="text" id="telefonoInput" />
-      </label>
-      <br />
-      <button onclick="enviarDatos()">Enviar</button>
-    </div>
+    <form id="preinscripcionForm">
+      <label for="Nombre">Nombre:</label>
+      <input type="text" name="Nombre" required>
+    
+      <label for="Apellido">Apellido:</label>
+      <input type="text" name="Apellido" required>
+    
+      <label for="Telefono">Teléfono:</label>
+      <input type="text" name="Telefono" required>
+    
+      <label for="Email">Email:</label>
+      <input type="email" name="Email" required>
+    
+      <label for="Curso">Curso:</label>
+      <select name="Curso" required>
+        <!-- Opciones del curso -->
+        <option value="curso1">Curso 1</option>
+        <option value="curso2">Curso 2</option>
+        <!-- Agrega más opciones según tus necesidades -->
+      </select>
+    
+      <label for="Comentarios">Comentarios:</label>
+      <textarea name="Comentarios"></textarea>
+    
+      <button type="submit">Enviar</button>
+    </form>
   </div>
   <script src="app.js"></script>
 </body>
