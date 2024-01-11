@@ -1,35 +1,34 @@
-const { DataTypes } = require('sequelize');
+import { DataTypes } from "sequelize";
 import { sequelize } from "../database/database.js";
-import { Task } from "./Task.js";
 
-module.exports = (sequelize) => {
-  const Preinscripcion = sequelize.define(
-    'Preinscripcion', {
-    Nombre: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    Apellido: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    Telefono: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    Email: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      unique: true,
-    },
-    Curso: {
-      type: DataTypes.STRING, // O puedes usar DataTypes.ENUM si tienes opciones fijas
-      allowNull: false,
-    },
-    Comentarios: {
-      type: DataTypes.TEXT,
-    },
+
+export const Preinscripcion = sequelize.define(
+    'preinscripcion',
+     {
+      nombre: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      apellido: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      telefono: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      email: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        unique: true,
+      },
+      curso: {
+        type: DataTypes.STRING, // O puedes usar DataTypes.ENUM si tienes opciones fijas
+        allowNull: false,
+      },
+      comentarios: {
+        type: DataTypes.TEXT,
+      },
   });
 
-  return Preinscripcion;
-};
+ 
