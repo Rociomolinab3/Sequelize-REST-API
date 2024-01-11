@@ -1,9 +1,17 @@
 {
-    "name": "frontend-app",
+    "name": "frontend-Preincripciones",
     "version": "1.0.0",
     "main": "index.js",
     "scripts": {
-      "start": "npx live-server public"
+      "start": "npx live-server public",
+      "watch": "npx tailwindcss -i ./src/css/input.css -o ./src/css/styles.css --watch"
     },
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+    "tailwindcss": "^3.3.5"
+  },
     "dependencies": {}
+
   }

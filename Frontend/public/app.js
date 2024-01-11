@@ -11,7 +11,7 @@ document.getElementById('preinscripcionForm').addEventListener('submit', async (
   });
 
   try {
-    const response = await fetch('http://localhost:3000/api/preinscripciones', {  // Ruta completa al backend
+    const response = await fetch('http://localhost:3000/preinscripciones', {  // Ruta completa al backend
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
