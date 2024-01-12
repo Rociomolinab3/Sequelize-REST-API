@@ -26,6 +26,10 @@ export const Preinscripcion = sequelize.define(
         type: DataTypes.STRING, // O puedes usar DataTypes.ENUM si tienes opciones fijas
         allowNull: false,
       },
+      sede: {
+        type: DataTypes.STRING, 
+        allowNull: false,
+      },
       comentarios: {
         type: DataTypes.TEXT,
       },

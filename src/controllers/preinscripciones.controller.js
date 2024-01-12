@@ -2,7 +2,7 @@ import { Preinscripcion } from "../models/Preinscripcion.js";
 
 
 export const createPreinscripcion = async (req,res) =>{
-  const {nombre, apellido, telefono, email,curso, comentarios} = req.body
+  const {nombre, apellido, telefono, email,curso, sede, comentarios} = req.body
 
   try {
     const preinscripcion = await Preinscripcion.create({
@@ -11,6 +11,7 @@ export const createPreinscripcion = async (req,res) =>{
       telefono,
       email,
       curso,
+      sede,
       comentarios
     });
 
