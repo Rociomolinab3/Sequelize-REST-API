@@ -28,31 +28,31 @@
               <div class="formulario relative w-full lg:w-6/12 md:w-full">
                 <div class="flex flex-col items-center p-10 mt-20 mb-20 bg-white">
                   <p class="w-full text-3xl text-blue-700 font-roboto">COMPLETA TUS DATOS PARA PREINSCRIBIRTE AL CICLO LECTIVO 2024.</p>
-                  <div class="w-full mt-6 mr-0 mb-0 ml-0 relative space-y-2">
+                  <div class="w-full mt-6 relative space-y-2">
                       <div class="flex-1">
                         <label for="nombre" ></label>
-                        <input type="text" placeholder="NOMBRE" name="nombre" class="border-b placeholder-gray-500 focus:outline-none
-                          focus:border-black w-full p-2 mt-2 text-base block bg-white border-gray-300 " required/>
+                        <input type="text" placeholder="NOMBRE" name="nombre" class="text-xl border-b placeholder-gray-500 focus:outline-none
+                          focus:border-black w-full p-2 mt-2 block bg-white border-gray-300 " required/>
                       </div>
                       <div class="flex-1">
                         <label for="apellido"></label>
-                        <input type="text" placeholder="APELLIDO" name="apellido" class="border-b placeholder-gray-500 focus:outline-none
-                          focus:border-black w-full p-2 mt-2 text-base block bg-white border-gray-300 " required/>
+                        <input type="text" placeholder="APELLIDO" name="apellido" class=" text-xl border-b placeholder-gray-500 focus:outline-none
+                          focus:border-black w-full p-2 mt-2 block bg-white border-gray-300 " required/>
                       </div>
                       <div class="flex-1">
                         <label for="telefono" ></label>
-                        <input type="text" placeholder="TELEFONO" name="telefono" class="border-b placeholder-gray-500 focus:outline-none
-                          focus:border-black w-full p-2 mt-2 text-base block bg-white border-gray-300 " required/>
+                        <input type="text" placeholder="TELEFONO" name="telefono" class="text-xl border-b placeholder-gray-500 focus:outline-none
+                          focus:border-black w-full p-2 mt-2 block bg-white border-gray-300 " required/>
                       </div>
                       <div class="flex-1">
                         <label for="email" ></label>
-                        <input type="text" placeholder="EMAIL" name="email" class="border-b placeholder-gray-500 focus:outline-none
-                          focus:border-black w-full p-2 mt-2 text-base block bg-white border-gray-300 " required/>
+                        <input type="text" placeholder="EMAIL" name="email" class="text-xl border-b placeholder-gray-500 focus:outline-none
+                          focus:border-black w-full p-2 mt-2  block bg-white border-gray-300 " required/>
                       </div>
                       <div class="flex-1">
                         <label for="curso" class="text-gray-600"></label>
-                        <select name="curso" class="border-b placeholder-gray-400 focus:outline-none
-                         focus:border-black w-full p-2 mt-2 text-base block bg-white border-gray-300 text-gray-500" required>
+                        <select name="curso" class=" text-xl border-b placeholder-gray-400 focus:outline-none
+                         focus:border-black w-full p-2 mt-2 block bg-white border-gray-300 text-gray-500" required>
                           <option value="" disabled selected>SELECCIONAR CURSO</option>
                           <option value="curso1">Curso 1</option>
                           <option value="curso2">Curso 2</option>
@@ -63,8 +63,8 @@
                       </div>
                       <div class="flex-1">
                         <label for="sede"></label>
-                        <select name="sede" class="border-b placeholder-gray-500 focus:outline-none
-                         focus:border-black w-full p-2 mt-2 text-base block bg-white border-gray-300 text-gray-500" required>
+                        <select name="sede" class="text-xl border-b placeholder-gray-500 focus:outline-none
+                         focus:border-black w-full p-2 mt-2 block bg-white border-gray-300 text-gray-500" required>
                           <option value="" disabled selected>SELECCIONAR SEDE</option>
                           <option value="sede1">Villa Mercedes</option>
                           <option value="sede2">Buena Esperanza</option>
@@ -75,6 +75,12 @@
                           <option value="sede8">La Calera</option>
                         </select>
                       </div>
+                      <div class="flex-1">
+                        <label for="comentario" ></label>
+                        <input type="text" placeholder="COMENTARIO" name="comentario" class="text-xl border-b placeholder-gray-500 focus:outline-none
+                          focus:border-black w-full p-2 mt-2  block bg-white border-gray-300 " required/>
+                      </div>
+                      
                       <div class="flex-1 flex justify-end">
                         <button  id="submitButton" class="button-primary mt-20 ">ENVIAR</button>
                         <!-- type="submit" id="submitButton" -->
@@ -83,8 +89,7 @@
                   </div>
                 </div>
                 <div class="hidden lg:block imagen bg-fondo bg-no-repeat relative w-5/12 bg-cover"></div>
-              </div>
-              
+              </div> 
       </form>
       </div>
     </div>
