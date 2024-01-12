@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Roboto:wght@100;300&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .wrapper {
+    @apply w-[90%] mx-auto overflow-hidden max-w-screen-xl;
+  }
+  .button-primary {
+    @apply text-light uppercase font-bold px-4 pt-2 pb-1 bg-primary rounded-md flex justify-center mx-6 mt-auto;
+  }
+  .title-primary {
+    @apply font-roboto text-4xl uppercase text-center pb-6;
+  }
+  .subtitle-primary {
+    @apply font-roboto text-secondary uppercase text-center pb-3;
+  }
+  .button-green {
+    @apply text-light uppercase font-bold px-4 pt-2 pb-1 bg-green rounded-md flex justify-center mx-6 mt-auto;
+  }
+  .scroll__header {
+    animation: headerScroll linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 300px;
+  }
+
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ajusta los valores según tus preferencias */
+  }
+
+  .text-pink {
+    color: #ff69b4; /* O cualquier otro tono de rosa que prefieras */
+  }
+
+  @keyframes headerScroll {
+    to {
+      background: #cc0972;
+    }
+  }
+}
